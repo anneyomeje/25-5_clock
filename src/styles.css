@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #002e51;
+  color: rgb(205, 199, 199);
+  height: 100%;
+  font: 62.5%;
+  font-size: 2rem;
+  font-family: "Inconsolata", monospace;
+}
+
+.container {
+  height: 100vh;
+}
+
+.container,
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main {
+  height: 500px;
+  width: 500px;
+  border: 1px solid;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px 3px #011829;
+  position: relative;
+}
+
+h1,
+#break-label,
+#session-label,
+#break-increment,
+#break-length,
+#break-decrement,
+#session-increment,
+#session-length,
+#session-decrement,
+.session,
+#start_stop,
+#reset {
+  position: absolute;
+}
+
+h1 {
+  font-size: 3rem;
+  top: 50px;
+}
+
+#break-label {
+  top: 130px;
+  left: 15px;
+}
+
+#session-label {
+  top: 130px;
+  right: 15px;
+}
+
+button {
+  font-size: 1.7rem;
+  border: none;
+  background-color: transparent;
+  color: rgb(205, 199, 199);
+}
+
+#break-increment,
+#break-length,
+#break-decrement,
+#session-increment,
+#session-length,
+#session-decrement {
+  top: 170px;
+}
+
+#break-increment {
+  left: 70px;
+}
+
+#break-length {
+  left: 105px;
+}
+
+#break-decrement {
+  left: 145px;
+}
+
+#session-increment {
+  right: 155px;
+}
+
+#session-length {
+  right: 115px;
+}
+
+#session-decrement {
+  right: 85px;
+}
+
+.session {
+  border: 5px solid rgb(205, 199, 199);
+  text-align: center;
+  padding: 20px 30px;
+  top: 230px;
+}
+
+#time-left {
+  font-size: 6rem;
+}
+
+#start_stop,
+#reset {
+  top: 430px;
+}
+
+#start_stop {
+  left: 210px;
+}
+
+#reset {
+  right: 210px;
+}
+
+.author {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #a1a18b;
+}
